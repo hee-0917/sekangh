@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이미지 갤러리</title>
+    <title>세강병원</title>
     <!-- Google Fonts 추가 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -128,18 +128,18 @@
             margin: 0 auto;
         }
         .footer-logo {
-            width: 160px;
+            width: 320px;          /* 160px에서 320px로 2배 증가 */
             height: auto;
-            margin-bottom: 15px;
+            margin-bottom: 20px;    /* 여백도 약간 증가 */
             object-fit: contain;
             background: transparent;
             padding: 0;
             box-shadow: none;
-            border: none;              /* 테두리 완전 제거 */
+            border: none;
             border-radius: 0;
             mix-blend-mode: multiply;
-            -webkit-filter: none;      /* 필터 효과 제거 */
-            filter: none;             /* 필터 효과 제거 */
+            -webkit-filter: none;
+            filter: none;
         }
         .footer-logo img {
             border: none;
@@ -171,11 +171,10 @@
         .footer-info p:not(:last-child) {
             margin-bottom: 8px;
         }
-        /* 모바일 대응 */
+        /* 모바일 대응도 2배 크기로 수정 */
         @media (max-width: 768px) {
             .footer-logo {
-                width: 90px;
-                border: none;          /* 모바일에서도 테두리 제거 */
+                width: 180px;      /* 90px에서 180px로 2배 증가 */
             }
             
             .footer .company-name {
