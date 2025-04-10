@@ -308,11 +308,48 @@
                 margin-top: 60px;
             }
         }
+        
+        /* 로고 이미지 스타일 추가 */
+        .logo-img {
+            height: 60px;
+            width: auto;
+            border: none;
+            box-shadow: none;
+            background: transparent;
+        }
+        
+        /* 로고 텍스트 스타일 (주석 처리)
+        .logo-text {
+            color: #1a4789;
+            font-weight: bold;
+            font-size: 1.5em;
+            font-family: 'Noto Sans KR', sans-serif;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s ease;
+        }
+        
+        .logo-text:hover {
+            color: #FF8A3D;
+        }
+        
+        .logo-text span {
+            color: #FF8A3D;
+            margin-left: 4px;
+        }
+        */
     </style>
 </head>
 <body>
     <div class="fixed-logo">
-        <img src="logo2.png" alt="세강병원 로고">
+        <picture>
+            <source srcset="logo2.png" type="image/png">
+            <source srcset="logo2.jpg" type="image/jpeg">
+            <source srcset="logo2.webp" type="image/webp">
+            <source srcset="logo2.svg" type="image/svg+xml">
+            <img src="logo.png" alt="세강병원 로고" class="logo-img">
+        </picture>
     </div>
     <div class="container">
         <div class="title-section">
