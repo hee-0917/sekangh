@@ -37,7 +37,7 @@
     <!-- Google Fonts 추가 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Font Awesome 아이콘 추가 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -90,7 +90,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 15px; /* 이미지 간격을 줄임 */
+            gap: 25px;                /* 이미지 간격 증가 */
         }
         .image-container {
             max-width: 350px;
@@ -99,7 +99,7 @@
             background: white;          /* 배경색 추가 */
             border: 2px solid #1a4789; /* 세강병원 파란색 테두리 */
             border-radius: 15px;       /* 모서리 둥글게 */
-            margin: 1px 0; /* 이미지와 푸터 사이의 여백을 현재의 절반으로 줄임 */
+            margin: 15px 0;            /* 여백 추가 */
         }
         .image-container:hover {
             transform: scale(1.02);
@@ -126,9 +126,6 @@
                 letter-spacing: 0.1em;
                 margin-top: 3px;
                 line-height: 1;
-            }
-            .image-container {
-                margin: 5px 0; /* 모바일에서 여백을 더 줄임 */
             }
         }
         footer {
@@ -397,6 +394,9 @@
             <div class="image-container">
                 <img src="사진3.jpg" alt="세 번째 사진">
             </div>
+            <div class="image-container">
+                <img src="사진4.jpg" alt="네 번째 사진">
+            </div>
         </div>
     </div>
     <footer>
@@ -404,7 +404,12 @@
             <div class="footer-container">
                 <div class="footer-info">
                     <p class="company-name">의료법인 일민의료재단 세강병원</p>
-                    <p>주소: <a href="https://www.google.co.kr/maps/place/%EB%8C%80%EA%B5%AC%EA%B4%91%EC%97%AD%EC%8B%9C+%EB%8B%AC%EC%84%9C%EA%B5%AC+%EA%B5%AC%EB%A7%88%EB%A1%9C+220/data=!3m1!4b1!4m6!3m5!1s0x3565e4b939bd989f:0xead107851bfd5a1c!8m2!3d35.8367841!4d128.551714!16s%2Fg%2F11bz6wyld4?hl=ko&entry=ttu&g_ep=EgoyMDI1MDQwOC4wIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D" target="_blank" class="homepage-link">대구 달서구 구마로 220</a></p>
+                    <p>주소: 
+                        <a href="https://www.google.com/maps/place/%EB%8C%80%EA%B5%AC%EA%B4%91%EC%97%AD%EC%8B%9C+%EB%8B%AC%EC%84%9C%EA%B5%AC+%EA%B5%AC%EB%A7%88%EB%A1%9C+220/data=!4m6!3m5!1s0x3565e4b939bd989f:0xead107851bfd5a1c!8m2!3d35.8367841!4d128.551714!16s%2Fg%2F11bz6wyld4?hl=ko&entry=ttu&g_ep=EgoyMDI1MDQwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="homepage-link">
+                            대구 달서구 구마로 220
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                    </p>
                     <p><strong>대외협력 이사/본부장 곽봉용</strong></p>
                     <p class="phone-container">
                         <span class="phone-icon"><i class="fa-solid fa-phone"></i></span>
@@ -414,7 +419,6 @@
                 </div>
             </div>
         </div>
-        <p>© 2025 SEKANG HOSPITAL. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
